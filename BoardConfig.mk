@@ -26,9 +26,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm630
 
-# Display
-TARGET_SCREEN_DENSITY := 420
-
 # Kernel
 TARGET_KERNEL_CONFIG := nokia_defconfig
 
