@@ -5,6 +5,9 @@ persist.audio.fluence.voicecomm=true
 persist.camera.ffcolor=true
 persist.capture.burst.exposures=0,-9,9
 
+# Display
+qemu.sf.lcd_density=420
+
 # Fingerprint
 ro.hardware.fingerprint=elan
 
