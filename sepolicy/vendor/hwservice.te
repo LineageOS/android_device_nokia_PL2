@@ -1,0 +1,1 @@
+type hal_nxpnfc_hwservice, hwservice_manager_type;
