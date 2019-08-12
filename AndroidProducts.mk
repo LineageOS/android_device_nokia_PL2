@@ -16,3 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_PL2.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_PL2-userdebug \
+    lineage_PL2-eng
