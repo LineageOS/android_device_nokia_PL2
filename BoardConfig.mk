@@ -21,7 +21,7 @@
 TARGET_BOOTLOADER_BOARD_NAME := sdm630
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_PL2_defconfig
+TARGET_KERNEL_CONFIG := nokia_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
