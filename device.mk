@@ -13,14 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file sets variables that control the way modules are built
-# thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
-# definition file).
-#
+
+# Set Shipping API level
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+
+# Inherit from nokia sdm660-common
+$(call inherit-product, device/nokia/sdm660-common/sdm660.mk)
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.PL2.target.rc
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/nokia/PL2/PL2-vendor.mk)

@@ -21,17 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/nokia/PL2/PL2-vendor.mk)
-
 #nherit from PL2 device
 $(call inherit-product, device/nokia/PL2/device.mk)
-
-# Inherit from nokia sdm660-common
-$(call inherit-product, device/nokia/sdm660-common/sdm660.mk)
-
-# Set Shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -51,9 +42,6 @@ PRODUCT_BRAND := Nokia
 PRODUCT_MODEL := Nokia 6.1
 
 PRODUCT_GMS_CLIENTID_BASE := android-hmd
-
-TARGET_VENDOR_PRODUCT_NAME := PL2
-TARGET_VENDOR_DEVICE_NAME := PL2
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=PL2_sprout \

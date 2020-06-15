@@ -1,6 +1,6 @@
 # Device Tree for Nokia 6.1 (PL2)
 
-The Nokia 6 (codenamed _"PL2"_) is a mid-range smartphone from Nokia.
+The Nokia 6.1 (codenamed _"plate2"_ , TLA _"PL2"_) is a mid-range smartphone from Nokia.
 It was released in April 2018.
 
 | Basic                   | Spec Sheet                                                                                                                     |
