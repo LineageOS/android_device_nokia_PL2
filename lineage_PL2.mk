@@ -24,6 +24,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/nokia/PL2/PL2-vendor.mk)
 
+#nherit from PL2 device
+$(call inherit-product, device/nokia/PL2/device.mk)
+
 # Inherit from nokia sdm660-common
 $(call inherit-product, device/nokia/sdm660-common/sdm660.mk)
 

@@ -1,0 +1,97 @@
+#Samsung NFC hidl rc
+import /vendor/etc/init/hw/android.hardware.nfc@1.2-service.sec.rc
+
+on early-boot
+    # set property ro.hardware.fingerprint for vendor HAL library load
+    setprop ro.hardware.fingerprint elan
+
+    #NFC hal surfix
+    setprop ro.hardware.nfc_nci sec
+
+    # Properties
+    setprop persist.camera.ffcolor FFDAB9
+    setprop persist.capture.burst.exposures 0,-9,9
+	setprop ro.rf.power.reduction.for.mcc 1
+    setprop persist.audio.fluence.voicecomm true
+
+on boot
+    # Fingerprint
+    chown system system /dev/elan_fp
+    chmod 0644 /dev/elan_fp
+
+    # Gestures
+    chown system system /proc/AllHWList/tp_fw_ver
+    chmod 644 /proc/AllHWList/tp_fw_ver
+    chmod 644 /dev/ilitek_ctrl
+    chown system system /dev/ilitek_ctrl
+    chown system system /proc/AllHWList/tp_alt_rst
+    chown system system /proc/AllHWList/tp_alt_st_count
+    chown system system /proc/AllHWList/tp_alt_st_enable
+    chmod 644 /proc/AllHWList/tp_alt_rst
+    chmod 644 /proc/AllHWList/tp_alt_st_count
+    chmod 644 /proc/AllHWList/tp_alt_st_enable
+    chown system system /proc/AllHWList/tp_double_tap
+    chmod 644 /proc/AllHWList/tp_double_tap
+
+on post-fs-data
+    # Fingerprint
+	mkdir /data/system/fingerprint 0770 system system
+
+    # NFC storage
+    mkdir /data/nfc
+
+    # add for Sec-NFC solution
+    chown nfc nfc /dev/sec-nfc
+    chmod 0770 /dev/sec-nfc
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/nfc/param 0770 nfc nfc
+
+    # Gestures
+    mkdir /data/vendor/misc/touch 0770 system system
+
+on property:sys.fih.fingerprint=false
+    setprop sys.fih.fingerprint true
+
+on property:sys.boot_completed=1
+    restorecon_recursive /data/system/users/
+
+on property:vendor.sys.cmd_test=1 && property:ro.boot.fp=elan
+    setprop vendor.sys.fqcfpret 0
+    start ElanPrintf_1
+
+on property:vendor.sys.fqcaudio=11
+	start fqcaudioloopback
+
+on property:vendor.sys.fqcaudio=10
+	start fqcaudioloopback
+
+on property:vendor.sys.fqcaudio=21
+	start fqcaudioloopback
+
+on property:vendor.sys.fqcaudio=20
+	start fqcaudioloopback
+
+on property:vendor.sys.fqcaudio=31
+	start fqcaudioloopback
+
+on property:vendor.sys.fqcaudio=30
+	start fqcaudioloopback
+
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input
+    writepid /dev/cpuset/system-background/tasks
+
+service ElanPrintf_1 /vendor/bin/ElanPrintf test_tool all 800 14200
+    user system
+    oneshot
+    disabled
+
+service fqcaudioloopback /vendor/bin/fqcaudioloopback_c1n.sh
+	user system
+	oneshot
+	disabled
