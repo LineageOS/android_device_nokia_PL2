@@ -299,26 +299,6 @@ vendor/lib64/egl/libEGL_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_adreno.so
 
-# Init Scripts
-vendor/bin/init.crda.sh
-vendor/bin/init.drg.lcm.sh
-vendor/bin/init.mdm.sh
-vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.coex.sh
-vendor/bin/init.qcom.crashdata.sh
-vendor/bin/init.qcom.efs.sync.sh
-vendor/bin/init.qcom.sdio.sh
-vendor/bin/init.qcom.usb.sh
-vendor/bin/init.qti.can.sh
-vendor/bin/init.qti.fm.sh
-vendor/bin/init.qti.ims.sh
-vendor/bin/init.sat.smartamp.sh
-vendor/bin/qca6234-service.sh
-vendor/bin/remove_data_ramdisk.sh
-vendor/etc/init/init.qti.fm.rc
-vendor/etc/init/rild.legacy.rc
-vendor/etc/init/vendor.rild.legacy.rc
-
 # Manifests
 vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
 vendor/etc/vintf/manifest/android.hardware.cas@1.1-service.xml
@@ -331,7 +311,6 @@ vendor/bin/gf_cmd_test_gxfp5288_c1n
 vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
 vendor/etc/ftm_test_config
 vendor/etc/graphite_ipc_platform_info.xml
-vendor/etc/ozo_config.xml
 vendor/etc/sec_s3nrn81_rfreg.bin
 
 # NFC
