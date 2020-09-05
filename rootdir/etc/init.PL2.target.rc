@@ -29,7 +29,6 @@ on post-fs-data
 
 
     # NFC storage
-    mkdir /data/nfc
     mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/nfc/param 0770 nfc nfc
     chown nfc nfc /dev/sec-nfc
