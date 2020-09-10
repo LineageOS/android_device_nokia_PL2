@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "764f39e4_ce33bdc0",
+        "filename": "lineage_PL2.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-09-10T08:30:17Z",
+      "side": 1,
+      "message": "Move to device.mk please",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 25
+      },
+      "revId": "9aa5f113437c41a3435eea0e450b6928b5dd6a81",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5d7e5540_6aa7728b",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 19612
+      },
+      "writtenOn": "2020-09-10T08:30:17Z",
+      "side": 1,
+      "message": "Let it stay in common",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 59
+      },
+      "revId": "9aa5f113437c41a3435eea0e450b6928b5dd6a81",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
