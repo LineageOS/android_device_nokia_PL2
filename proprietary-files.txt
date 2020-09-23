@@ -1,3 +1,6 @@
+## Common proprietary files
+## From Nokia/Plate2_00WW/PL2_sprout:10/QKQ1.190828.002/00WW_4_15C:user/release-keys unless
+
 # Audio (Configs)
 vendor/etc/audio_platform_info_pl2.xml
 vendor/etc/audio_platform_info_pl2_cn.xml
