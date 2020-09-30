@@ -1,6 +1,3 @@
-#Samsung NFC hidl rc
-import /vendor/etc/init/hw/android.hardware.nfc@1.2-service.sec.rc
-
 on early-boot
     # Audio
     setprop persist.audio.fluence.voicecomm true
@@ -22,6 +19,11 @@ on boot
     # Fingerprint
     chown system system /dev/elan_fp
     chmod 0644 /dev/elan_fp
+
+    # permission for NFC
+    setprop ro.nfc.port "I2C"
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
 
 on post-fs-data
     # Fingerprint
