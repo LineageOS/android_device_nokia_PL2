@@ -42,6 +42,9 @@ vendor/etc/PL2/ncf/rear/ISO800_3200x2400.ncf
 vendor/etc/PL2/ncf/rear/ISO800_3840x2160.ncf
 vendor/etc/PL2/ncf/rear/ISO800_4608x3456.ncf
 
+# NFC
+vendor/lib/libpn553_fw.so
+
 # Sensor (Configs)
 vendor/etc/sensors/sensor_def_qcomdev_pl2.conf
 
