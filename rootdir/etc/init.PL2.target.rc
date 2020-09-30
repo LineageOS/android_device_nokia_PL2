@@ -22,6 +22,12 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     disabled
 
+# Run restorecon to fix SELinux contexts of /data/system/users/[0-9]+/fpdata
+# forecfully
+on property:sys.boot_completed=1
+    exec u:r:vendor_init:s0 root root -- /vendor/bin/toybox_vendor \
+      restorecon -RF /data/system/users
+
 on property:ro.boot.nfc=sec
     chown nfc nfc /dev/sec-nfc
     chmod 0770 /dev/sec-nfc
