@@ -42,6 +42,20 @@ vendor/etc/PL2/ncf/rear/ISO800_3200x2400.ncf
 vendor/etc/PL2/ncf/rear/ISO800_3840x2160.ncf
 vendor/etc/PL2/ncf/rear/ISO800_4608x3456.ncf
 
+# NFC (Samsung)
+vendor/bin/sec_nfc_test
+vendor/bin/hw/android.hardware.nfc@1.2-service.sec
+vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
+vendor/etc/init/hw/android.hardware.nfc@1.2-service.sec.rc
+vendor/etc/permissions/com.gsma.services.nfc.sec.xml
+vendor/etc/nfcee_access.xml
+vendor/lib/nfc_nci_sec.so
+vendor/lib64/nfc_nci_sec.so
+
+# NFC (Firmware -Samsung)
+vendor/firmware/sec_s3nrn81_firmware.bin
+vendor/etc/sec_s3nrn81_rfreg.bin
+
 # Sensor (Configs)
 vendor/etc/sensors/sensor_def_qcomdev_pl2.conf
 
