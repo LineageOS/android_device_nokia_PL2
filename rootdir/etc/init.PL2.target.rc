@@ -1,6 +1,3 @@
-#Samsung NFC hidl rc
-import /vendor/etc/init/hw/android.hardware.nfc@1.2-service.sec.rc
-
 on early-boot
     # Audio
     setprop persist.audio.fluence.voicecomm true
@@ -11,9 +8,6 @@ on early-boot
 
     # Fingerprint
     setprop ro.hardware.fingerprint elan
-
-    # NFC
-    setprop ro.hardware.nfc_nci sec
 
     # Radio
     setprop ro.rf.power.reduction.for.mcc 1
@@ -27,12 +21,9 @@ on post-fs-data
     # Fingerprint
     mkdir /data/system/fingerprint 0770 system system
 
-
     # NFC storage
     mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/nfc/param 0770 nfc nfc
-    chown nfc nfc /dev/sec-nfc
-    chmod 0770 /dev/sec-nfc
 
 on property:sys.fih.fingerprint=false
     setprop sys.fih.fingerprint true
@@ -74,3 +65,15 @@ service fqcaudioloopback /vendor/bin/fqcaudioloopback_c1n.sh
     user system
     oneshot
     disabled
+
+service nfc_hal_service-sec /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
+    class hal
+    user nfc
+    disabled
+    group nfc
+
+on property:ro.boot.nfc=sec
+    chown nfc nfc /dev/sec-nfc
+    chmod 0770 /dev/sec-nfc
+    setprop ro.hardware.nfc_nci sec
+    enable nfc_hal_service-sec

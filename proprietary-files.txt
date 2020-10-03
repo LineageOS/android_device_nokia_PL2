@@ -46,7 +46,6 @@ vendor/etc/PL2/ncf/rear/ISO800_4608x3456.ncf
 vendor/bin/sec_nfc_test
 vendor/bin/hw/android.hardware.nfc@1.2-service.sec
 vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
-vendor/etc/init/hw/android.hardware.nfc@1.2-service.sec.rc
 vendor/etc/permissions/com.gsma.services.nfc.sec.xml
 vendor/etc/nfcee_access.xml
 vendor/lib/nfc_nci_sec.so
