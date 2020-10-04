@@ -72,8 +72,23 @@ service nfc_hal_service-sec /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
     disabled
     group nfc
 
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    interface android.hardware.nfc@1.2::INfc default
+    class hal
+    user nfc
+    group nfc
+    disabled
+
 on property:ro.boot.nfc=sec
     chown nfc nfc /dev/sec-nfc
     chmod 0770 /dev/sec-nfc
     setprop ro.hardware.nfc_nci sec
     enable nfc_hal_service-sec
+
+on property:ro.boot.nfc=nxp
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+    setprop ro.nfc.port "I2C"
+    setprop ro.hardware.nfc_nci nqx.default
+    enable vendor.nfc_hal_service

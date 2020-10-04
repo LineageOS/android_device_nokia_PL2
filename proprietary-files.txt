@@ -42,6 +42,9 @@ vendor/etc/PL2/ncf/rear/ISO800_3200x2400.ncf
 vendor/etc/PL2/ncf/rear/ISO800_3840x2160.ncf
 vendor/etc/PL2/ncf/rear/ISO800_4608x3456.ncf
 
+# NFC (NXP)
+vendor/lib/libpn553_fw.so
+
 # NFC (Samsung)
 vendor/bin/sec_nfc_test
 vendor/bin/hw/android.hardware.nfc@1.2-service.sec
