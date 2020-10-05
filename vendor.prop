@@ -1,0 +1,12 @@
+# Audio
+persist.audio.fluence.voicecomm=true
+
+# Camera
+persist.camera.ffcolor=true
+persist.capture.burst.exposures=0,-9,9
+
+# Fingerprint
+ro.hardware.fingerprint=elan
+
+# Radio
+ro.rf.power.reduction.for.mcc=1

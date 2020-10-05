@@ -1,17 +1,3 @@
-on early-boot
-    # Audio
-    setprop persist.audio.fluence.voicecomm true
-
-    # Camera
-    setprop persist.camera.ffcolor FFDAB9
-    setprop persist.capture.burst.exposures 0,-9,9
-
-    # Fingerprint
-    setprop ro.hardware.fingerprint elan
-
-    # Radio
-    setprop ro.rf.power.reduction.for.mcc 1
-
 on boot
     # Fingerprint
     chown system system /dev/elan_fp
