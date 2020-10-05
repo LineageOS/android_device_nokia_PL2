@@ -34,3 +34,8 @@ on property:ro.boot.nfc=nxp
     setprop ro.nfc.port "I2C"
     setprop ro.hardware.nfc_nci nqx.default
     enable vendor.nfc_hal_service
+
+on property:sys.boot_completed=1
+    exec u:r:vendor_toolbox:s0 -- /vendor/bin/toybox_vendor find /data/system/users -type d \
+         -exec /vendor/bin/toybox_vendor setfattr -x security.sehash {} \;
+    restorecon_recursive /data/system/users/
