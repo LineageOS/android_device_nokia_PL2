@@ -42,6 +42,20 @@ vendor/etc/PL2/ncf/rear/ISO800_3200x2400.ncf
 vendor/etc/PL2/ncf/rear/ISO800_3840x2160.ncf
 vendor/etc/PL2/ncf/rear/ISO800_4608x3456.ncf
 
+# Fingerprint (Elan)
+vendor/lib64/hw/fingerprint.elan.so
+
+# Fingerprint (Firmware - Elan)
+vendor/firmware/elanfp64.b00
+vendor/firmware/elanfp64.b02
+vendor/firmware/elanfp64.b03
+vendor/firmware/elanfp64.b04
+vendor/firmware/elanfp64.b05
+vendor/firmware/elanfp64.b06
+vendor/firmware/elanfp64.b07
+vendor/firmware/elanfp64.b01
+vendor/firmware/elanfp64.mdt
+
 # NFC (NXP)
 vendor/lib/libpn553_fw.so
 
