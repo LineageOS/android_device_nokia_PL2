@@ -60,10 +60,8 @@ vendor/firmware/elanfp64.mdt
 vendor/lib/libpn553_fw.so
 
 # NFC (Samsung)
-vendor/bin/sec_nfc_test
 vendor/bin/hw/android.hardware.nfc@1.2-service.sec
 vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
-vendor/etc/permissions/com.gsma.services.nfc.sec.xml
 vendor/etc/nfcee_access.xml
 vendor/lib/nfc_nci_sec.so
 vendor/lib64/nfc_nci_sec.so
