@@ -16,6 +16,10 @@ vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Hdmi_cal.acdb
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Headset_cal.acdb
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Speaker_cal.acdb
 
+# Audio (Firmware - TFA9891)
+vendor/firmware/TFA9891_pl2.cnt
+vendor/firmware/TFA9891_pl2.ini
+
 # Camera (Configs)
 vendor/etc/PL2/ncf/front/ISO640_1280x720.ncf
 vendor/etc/PL2/ncf/front/ISO640_2048x1536.ncf
