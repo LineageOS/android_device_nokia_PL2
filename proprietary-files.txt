@@ -56,6 +56,9 @@ vendor/firmware/elanfp64.b07
 vendor/firmware/elanfp64.b01
 vendor/firmware/elanfp64.mdt
 
+# Graphics (Firmware - Focaltech)
+vendor/firmware/TP_Firmware_FT8716_PL2.bin
+
 # NFC (NXP)
 vendor/lib/libpn553_fw.so
 
