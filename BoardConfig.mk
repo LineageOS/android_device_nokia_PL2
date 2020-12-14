@@ -20,8 +20,8 @@ DEVICE_PATH := device/nokia/PL2
 -include device/nokia/sdm660-common/BoardConfigCommon.mk
 
 # Architecture
-TARGET_CPU_VARIANT_RUNTIME := cortex-a53
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
+TARGET_CPU_VARIANT := cortex-a53
+TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm630
