@@ -8,7 +8,8 @@ on post-fs-data
     mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/nfc/param 0770 nfc nfc
 
-service nfc_hal_service-sec /vendor/bin/hw/android.hardware.nfc@1.2-service.sec
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.samsung
+    override
     class hal
     user nfc
     disabled
@@ -28,7 +29,7 @@ on property:ro.boot.nfc=sec
     chown nfc nfc /dev/sec-nfc
     chmod 0770 /dev/sec-nfc
     setprop ro.hardware.nfc_nci sec
-    enable nfc_hal_service-sec
+    enable nfc_hal_service
 
 on property:ro.boot.nfc=nxp
     chmod 0660 /dev/nq-nci
