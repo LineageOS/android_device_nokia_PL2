@@ -147,17 +147,13 @@ vendor/firmware/elanfp64.mdt
 # Graphics (Firmware - Focaltech)
 vendor/firmware/TP_Firmware_FT8716_PL2.bin
 
-# NFC (NXP)
+# NFC
+vendor/etc/nfcee_access.xml
+
+# NFC (Firmware - NXP)
 vendor/lib/libpn553_fw.so
 
-# NFC (Samsung)
-vendor/bin/hw/android.hardware.nfc@1.2-service.sec
-vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
-vendor/etc/nfcee_access.xml
-vendor/lib/nfc_nci_sec.so
-vendor/lib64/nfc_nci_sec.so
-
-# NFC (Firmware -Samsung)
+# NFC (Firmware - Samsung)
 vendor/firmware/sec_s3nrn81_firmware.bin
 vendor/etc/sec_s3nrn81_rfreg.bin
 
