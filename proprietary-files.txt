@@ -147,6 +147,10 @@ vendor/firmware/elanfp64.mdt
 # Graphics (Firmware - Focaltech)
 vendor/firmware/TP_Firmware_FT8716_PL2.bin
 
+#Graphics (Firmware - Adreno)
+vendor/firmware/a512_zap.b01
+vendor/firmware/a512_zap.mdt
+
 # NFC (NXP)
 vendor/lib/libpn553_fw.so
 
