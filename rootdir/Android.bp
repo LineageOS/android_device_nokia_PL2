@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.PL2.target.rc",
+    src: "etc/init.PL2.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
