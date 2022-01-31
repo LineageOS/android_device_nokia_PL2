@@ -23,6 +23,9 @@ DEVICE_PATH := device/nokia/PL2
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# Assert
+TARGET_BOARD_INFO_FILE := device/nokia/PL2/board-info.txt
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm630
 

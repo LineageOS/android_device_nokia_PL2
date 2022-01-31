@@ -1,0 +1,1 @@
+require board=sdm630|B2N|PL2
