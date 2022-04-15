@@ -1,6 +1,9 @@
 # Audio
 persist.audio.fluence.voicecomm=true
 
+# Bluetooth
+bluetooth.device.default_name=Nokia 6.1
+
 # Camera
 persist.camera.ffcolor=true
 persist.capture.burst.exposures=0,-9,9
