@@ -135,13 +135,13 @@ vendor/lib64/hw/fingerprint.elan.so
 
 # Fingerprint (Firmware - Elan)
 vendor/firmware/elanfp64.b00
+vendor/firmware/elanfp64.b01
 vendor/firmware/elanfp64.b02
 vendor/firmware/elanfp64.b03
 vendor/firmware/elanfp64.b04
 vendor/firmware/elanfp64.b05
 vendor/firmware/elanfp64.b06
 vendor/firmware/elanfp64.b07
-vendor/firmware/elanfp64.b01
 vendor/firmware/elanfp64.mdt
 
 # Graphics (Firmware - Focaltech)
@@ -154,8 +154,8 @@ vendor/etc/nfcee_access.xml
 vendor/lib/libpn553_fw.so
 
 # NFC (Firmware - Samsung)
-vendor/firmware/sec_s3nrn81_firmware.bin
 vendor/etc/sec_s3nrn81_rfreg.bin
+vendor/firmware/sec_s3nrn81_firmware.bin
 
 # Sensor (Configs)
 vendor/etc/sensors/sensor_def_qcomdev_pl2.conf
