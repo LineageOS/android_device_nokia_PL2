@@ -40,8 +40,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     android.hardware.nfc@1.2-service.samsung \
-    NfcNci \
-    SecureElement \
     Tag \
     com.android.nfc_extras
 
