@@ -44,9 +44,4 @@
         <item>0</item>
     </integer-array>
 
-    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
-    <integer-array name="config_keyboardTapVibePattern">
-        <item>35</item>
-    </integer-array>
-
 </resources>
