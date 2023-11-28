@@ -1,5 +1,5 @@
-## Common proprietary files
-## From Nokia/Plate2_00WW/PL2_sprout:10/QKQ1.190828.002/00WW_4_15O:user/release-keys unless pinned
+## All proprietary files from this list, unless pinned and noted otherwise,
+## are from PL2_sprout (QKQ1.190828.002).
 
 # Audio (Configs)
 vendor/etc/audio_platform_info_pl2.xml
@@ -7,7 +7,7 @@ vendor/etc/audio_platform_info_pl2_cn.xml
 vendor/etc/mixer_paths_pl2.xml
 vendor/etc/mixer_paths_pl2_cn.xml
 
-# Audio (ACDB) - from Nokia/Plate2_00WW/PL2_sprout:10/QKQ1.190828.002/00WW_4_15C:user/release-keys
+# Audio (ACDB) - from PL2_sprout (QKQ1.190828.002)
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Bluetooth_cal.acdb|2f6b241fbf14bf90dc735cf5d6aaf8a4ea9520c2
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/General_cal.acdb|4753b479d587447afba1dd45e57251a3e32ad7ec
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Global_cal.acdb|362dcd1fb8ee2fdcb5dc3543a0c836602d1e7e88
