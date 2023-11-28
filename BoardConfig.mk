@@ -21,7 +21,7 @@ DEVICE_PATH := device/nokia/PL2
 
 # Architecture
 TARGET_CPU_VARIANT_RUNTIME := cortex-a53
-TARGET_2ND_CPU_VARIANT := cortex-a53
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
 # Assertions
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
