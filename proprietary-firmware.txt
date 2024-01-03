@@ -1,0 +1,22 @@
+# Firmware - from PL2_sprout (QKQ1.190828.002) - (OTA Image).
+
+abl.img;AB
+bluetooth.img;AB
+cda.img;AB
+cmnlib.img;AB
+cmnlib64.img;AB
+devcfg.img;AB
+dsp.img;AB
+hidden.img;AB
+hyp.img;AB
+keymaster.img;AB
+mdtp.img;AB
+mdtpsecapp.img;AB
+modem.img;AB
+nvdef.img;AB
+pmic.img;AB
+rpm.img;AB
+splash.img;AB
+systeminfo.img;AB
+tz.img;AB
+xbl.img;AB
