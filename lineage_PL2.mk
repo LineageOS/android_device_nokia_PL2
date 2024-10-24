@@ -15,5 +15,4 @@ PRODUCT_NAME := lineage_PL2
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="Plate2_00WW-user 10 QKQ1.190828.002 00WW_4_15O release-keys" \
     BuildFingerprint=Nokia/Plate2_00WW/PL2_sprout:10/QKQ1.190828.002/00WW_4_15O:user/release-keys \
-    DeviceName=Plate2_00WW \
     DeviceProduct=PL2_sprout
