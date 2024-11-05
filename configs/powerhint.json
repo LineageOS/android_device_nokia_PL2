@@ -5,7 +5,9 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1094400"
+        "1536000",
+        "1382400",
+        "1113600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -15,7 +17,10 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1094400",
+        "1536000",
+        "1382400",
+        "1113600",
+        "883200",
         "614400"
       ],
       "ResetOnInit": true
@@ -25,7 +30,9 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1516800"
+        "1670400",
+        "1344000",
+        "1113600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -35,7 +42,10 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1113600"
+        "1670400",
+        "1344000",
+        "1113600",
+        "787200"
       ],
       "ResetOnInit": true
     },
@@ -44,7 +54,8 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
         "700000000",
-        "588000000"
+        "588000000",
+        "465000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -53,7 +64,9 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
+        "700000000",
         "588000000",
+        "465000000",
         "370000000",
         "160000000"
       ],
@@ -162,25 +175,25 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1516800"
+      "Value": "1113600"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "1094400"
+      "Value": "1113600"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "588000000"
+      "Value": "465000000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1094400"
+      "Value": "614400"
     },
     {
       "PowerHint": "INTERACTION",
@@ -210,19 +223,19 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 5000,
-      "Value": "9999999"
+      "Value": "1113600"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 5000,
-      "Value": "9999999"
+      "Value": "787200"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 5000,
-      "Value": "9999999"
+      "Value": "614400"
     },
     {
       "PowerHint": "LAUNCH",
