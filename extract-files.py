@@ -28,6 +28,15 @@ namespace_imports = [
     'vendor/nokia/sdm660-common',
 ]
 
+blob_fixups: blob_fixups_user_type = {
+    'vendor/lib/hw/camera.sdm660.so': blob_fixup()
+	.remove_needed('libMegviiFacepp.so')
+	.remove_needed('libmegface-new.so')
+	.add_needed('libshim_megvii.so'),
+    'vendor/lib/libgui_vendor.so': blob_fixup()
+	.add_needed('libgui_shim_vendor.so'),
+}  # fmt: skip
+
 module = ExtractUtilsModule(
     'PL2',
     'nokia',
