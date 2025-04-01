@@ -310,7 +310,7 @@ vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 
 # Fingerprint (Elan)
-vendor/lib64/hw/fingerprint.elan.so
+vendor/lib64/hw/fingerprint.elan.so;FIX_SONAME
 
 # Fingerprint (Firmware - Elan)
 vendor/firmware/elanfp64.b00
