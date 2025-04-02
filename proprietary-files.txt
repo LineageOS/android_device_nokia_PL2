@@ -57,7 +57,7 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
 # Camera - from 00WW_3_260
 vendor/bin/mm-qcamera-app|1914dd40954d0679c9289c9f4a5a255ff6b70cb1
-vendor/lib/hw/camera.sdm660.so|925527a7a3fa2224fe1deca7883ec199745536b2
+vendor/lib/hw/camera.sdm660.so|925527a7a3fa2224fe1deca7883ec199745536b2|db95d35d4870715a1c21f2e598df28efc459f8b8
 vendor/lib/libdepthmapwrapper.so|8d5f03354650ddea19fc8781c824fbb96105a86e
 vendor/lib/libfih_camera_effect.so|360a9dc97b27b95025860c8dc9508701f81ae5e3
 vendor/lib/libflash_dummy_flash.so|481bd2fccd85401d4834d96e8e4f78f74d37e31e
