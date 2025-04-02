@@ -34,7 +34,6 @@ on property:ro.boot.nfc=sec
 on property:ro.boot.nfc=nxp
     chmod 0660 /dev/nq-nci
     chown nfc nfc /dev/nq-nci
-    setprop ro.nfc.port "I2C"
     setprop ro.hardware.nfc_nci nqx.default
     enable vendor.nfc_hal_service
 
