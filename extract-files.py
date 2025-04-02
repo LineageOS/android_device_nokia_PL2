@@ -29,10 +29,6 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib/hw/camera.sdm660.so': blob_fixup()
-	.remove_needed('libMegviiFacepp.so')
-	.remove_needed('libmegface-new.so')
-	.add_needed('libshim_megvii.so'),
      ('vendor/lib/libmmcamera_faceproc.so', 'vendor/lib/libmmcamera_faceproc2.so'): blob_fixup()
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
