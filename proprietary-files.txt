@@ -37,6 +37,20 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 # Amplifier firmware
 vendor/firmware/TFA9891_pl2.cnt
 vendor/firmware/TFA9891_pl2.ini
+vendor/firmware/T9891M04.drc
+vendor/firmware/T9891M04.vstep
+vendor/firmware/T9891R04.drc
+vendor/firmware/T9891R04.vstep
+vendor/firmware/T9891S04.drc
+vendor/firmware/T9891S04.vstep
+vendor/firmware/T9891V04.drc
+vendor/firmware/T9891V04.vstep
+vendor/firmware/TFA9891.cnt
+vendor/firmware/TFA9891.cnt_preformat.ini
+vendor/firmware/TFA9891.ini
+vendor/firmware/TFA9891.speaker
+vendor/firmware/TFA9891N1A_Dec2015.config
+vendor/firmware/TFA9891_N1A_11_1_31_NL3_HQ.patch
 
 # ADSP (Modules)
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
