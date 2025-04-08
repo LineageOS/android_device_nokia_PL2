@@ -17,7 +17,7 @@
 $(call inherit-product, vendor/nokia/PL2/PL2-vendor.mk)
 
 # Set Shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
