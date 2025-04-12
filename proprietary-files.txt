@@ -4,6 +4,16 @@
 # Current libraries with ELF check disabled:
 # libmmcamera2_cpp_module, libmmcamera2_is, libmmcamera2_stats_lib, libmmcamera2_stats_algorithm, libmmcamera2_q3a_core, libmmcamera2_mct, libmmcamera2_imglib_modules, libmmcamera2_iface_modules, libmmcamera_interface, libmmcamera2_isp_modules, libmmcamera2_stats_modules depends on intrinsic symbols which are difficult to shim like __aeabi_d2lz, __aeabi_ldivmod, __aeabi_ul2d, etc...
 
+# Audio
+vendor/lib/hw/audio.primary.sdm660.so:vendor/lib/hw/audio.primary.sdm660-nokia.so;FIX_SONAME
+vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libdrc.so
+vendor/lib/libqtigef.so
+vendor/lib/libsurround_3mic_proc.so
+vendor/lib/libtinycompress.so
+
 # ADSP
 vendor/lib/libadsp_hvx_callback_skel.so
 vendor/lib/libadsp_hvx_stub.so
