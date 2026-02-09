@@ -6,9 +6,9 @@
 
 # Audio
 vendor/lib/hw/audio.primary.sdm660.so:vendor/lib/hw/audio.primary.sdm660-nokia.so;FIX_SONAME
+vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
-vendor/lib/libaudio_log_utils.so
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
@@ -45,8 +45,6 @@ vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Amplifier firmware
-vendor/firmware/TFA9891_pl2.cnt
-vendor/firmware/TFA9891_pl2.ini
 vendor/firmware/T9891M04.drc
 vendor/firmware/T9891M04.vstep
 vendor/firmware/T9891R04.drc
@@ -61,6 +59,8 @@ vendor/firmware/TFA9891.ini
 vendor/firmware/TFA9891.speaker
 vendor/firmware/TFA9891N1A_Dec2015.config
 vendor/firmware/TFA9891_N1A_11_1_31_NL3_HQ.patch
+vendor/firmware/TFA9891_pl2.cnt
+vendor/firmware/TFA9891_pl2.ini
 
 # ADSP (Modules)
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
@@ -197,11 +197,6 @@ vendor/lib/libmmcamera_s5k4h8_holitech_eeprom.so|b639adac2565516d3f45be601f36a18
 vendor/lib/libmmcamera_s5k4h8_pl2_holitech.so|a827ef8a9cb5adcddf7acbbaca36637403634338
 
 # Camera (configs) - from 00WW_3_260
-vendor/etc/camera/calibration_test.bin|0061e8a3127857c390d9c3743b64cc4b29cd560c
-vendor/etc/camera/camera_config.xml|86c982d2c2a0529cb90bd05ba2c02b98d3230b8c
-vendor/etc/camera/s5k3p3_chromatix.xml|a50c159de52aa7c240ff8466f85e09f2be166f8e
-vendor/etc/camera/s5k4h8_chromatix.xml|c7c411a13f96caafa751ed8f6b8ec3d8ede1274d
-vendor/etc/camera/s5k4h8_pl2_holitech_chromatix.xml|be3c4a9f479d43689e48865633fdd5a76ccf5830
 vendor/etc/PL2/ncf/front/ISO640_1280x720.ncf|81fbd32f7407928b626df18bc3f255f6e82ab292
 vendor/etc/PL2/ncf/front/ISO640_2048x1536.ncf|9191ba7523b84c1fdaffe9e71ae7f81abaa5ee19
 vendor/etc/PL2/ncf/front/ISO640_2592x1944.ncf|ee856b955786089146851fc0ea946ac2565c5508
@@ -226,6 +221,11 @@ vendor/etc/PL2/ncf/rear/ISO800_2688x1512.ncf|7dd645d35e777d0d06a315c1a7a8a27dec5
 vendor/etc/PL2/ncf/rear/ISO800_3200x2400.ncf|60d16ae00b5ddef7fe40f148bf7c3453a7f419a4
 vendor/etc/PL2/ncf/rear/ISO800_3840x2160.ncf|a8d1d54a15c99b668d687be87108ca56dbc9a3a0
 vendor/etc/PL2/ncf/rear/ISO800_4608x3456.ncf|ec7cfbcaef445e15ea7545ec128ea61fcb4e1067
+vendor/etc/camera/calibration_test.bin|0061e8a3127857c390d9c3743b64cc4b29cd560c
+vendor/etc/camera/camera_config.xml|86c982d2c2a0529cb90bd05ba2c02b98d3230b8c
+vendor/etc/camera/s5k3p3_chromatix.xml|a50c159de52aa7c240ff8466f85e09f2be166f8e
+vendor/etc/camera/s5k4h8_chromatix.xml|c7c411a13f96caafa751ed8f6b8ec3d8ede1274d
+vendor/etc/camera/s5k4h8_pl2_holitech_chromatix.xml|be3c4a9f479d43689e48865633fdd5a76ccf5830
 
 # Camera (Firmware) - from 00WW_3_260
 vendor/firmware/cpp_firmware_v1_10_0.fw|a3c0fc706eb3f23b99852fe8c52c26f63999f70c
