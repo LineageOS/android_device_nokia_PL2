@@ -3,10 +3,6 @@ on boot
     chown system system /dev/elan_fp
     chmod 0644 /dev/elan_fp
 
-    # Touch panel
-    chown system system /dev/ilitek_ctrl
-    chmod 644 /dev/ilitek_ctrl
-
 on post-fs-data
     # NFC storage
     mkdir /data/vendor/nfc 0770 nfc nfc
