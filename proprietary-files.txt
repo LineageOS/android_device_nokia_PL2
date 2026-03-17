@@ -352,6 +352,9 @@ vendor/firmware/TP_Firmware_FT8716_PL2.bin
 vendor/firmware/a508_zap.b01
 vendor/firmware/a508_zap.mdt
 
+# Keylayout
+vendor/usr/keylayout/elan.kl
+
 # Keymaster (QTI)
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
