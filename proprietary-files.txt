@@ -405,7 +405,7 @@ vendor/lib64/sensors.ssc.so
 vendor/etc/sensors/sensor_def_qcomdev_pl2.conf
 
 # Thermal
-vendor/etc/thermal-engine-PL2.conf:vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-PL2.conf:vendor/etc/thermal-engine.conf;TRYSRCFIRST
 
 # WLAN
 vendor/bin/cnss-daemon
