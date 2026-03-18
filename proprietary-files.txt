@@ -21,6 +21,7 @@ vendor/lib/libadsp_hvx_stub.so
 # Audio (Configs)
 vendor/etc/audio_platform_info_pl2.xml
 vendor/etc/audio_platform_info_pl2_cn.xml
+vendor/etc/audio_policy_volumes.xml
 vendor/etc/mixer_paths_pl2.xml
 vendor/etc/mixer_paths_pl2_cn.xml
 
