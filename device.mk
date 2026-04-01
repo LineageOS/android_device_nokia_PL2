@@ -6,6 +6,10 @@
 # Vendor blobs
 $(call inherit-product, vendor/nokia/PL2/PL2-vendor.mk)
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio_amplifier.sdm660
+
 # Set Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 27
 
