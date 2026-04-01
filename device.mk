@@ -27,9 +27,6 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
 
-# GMS
-PRODUCT_GMS_CLIENTID_BASE := android-hmd
-
 # Init
 PRODUCT_PACKAGES += \
     init.PL2.target.rc
