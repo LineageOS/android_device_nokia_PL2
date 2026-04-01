@@ -21,6 +21,7 @@ vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Handset_cal.acdb
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Hdmi_cal.acdb
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Headset_cal.acdb
 vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/Speaker_cal.acdb
+vendor/etc/acdbdata/PL2/sdm660-snd-card-pl2/workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Amplifier firmware
