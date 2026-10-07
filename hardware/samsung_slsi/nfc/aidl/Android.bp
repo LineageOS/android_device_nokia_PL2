@@ -1,0 +1,23 @@
+cc_binary {
+    name: "android.hardware.nfc-service.sec-sku",
+    relative_install_path: "hw",
+    vendor: true,
+    cflags: [
+        "-Wall",
+        "-Wextra",
+    ],
+    shared_libs: [
+        "libbase",
+        "liblog",
+        "libutils",
+        "libcrypto",
+        "libbinder_ndk",
+        "android.hardware.nfc-V1-ndk",
+        "nfc_nci_sec",
+    ],
+    srcs: [
+        "main.cpp",
+        "Nfc.cpp",
+        "NfcExtra.cc",
+    ],
+}

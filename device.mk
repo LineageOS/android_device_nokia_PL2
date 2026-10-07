@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
-    android.hardware.nfc-service.sec \
+    android.hardware.nfc-service.sec-sku \
     com.android.nfc_extras \
     Tag
 

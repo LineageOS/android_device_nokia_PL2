@@ -8,7 +8,7 @@ on post-fs-data
     mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/nfc/param 0770 nfc nfc
 
-service nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.sec
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.sec-sku
     override
     class hal
     user nfc
