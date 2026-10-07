@@ -21,7 +21,8 @@ from extract_utils.main import (
 namespace_imports = [
     'device/nokia/sdm660-common',
     'hardware/qcom-caf/wlan',
-    'hardware/qcom-caf/msm8998',
+    'hardware/qcom-caf/sdm660',
+    'vendor/qcom/opensource/display',
     'vendor/nokia/sdm660-common',
 ]
 
