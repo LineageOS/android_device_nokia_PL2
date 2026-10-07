@@ -2,7 +2,7 @@
 ## are from PL2_sprout (QKQ1.190828.002).
 
 # Current libraries with ELF check disabled:
-# libmmcamera2_cpp_module, libmmcamera2_is, libmmcamera2_stats_lib, libmmcamera2_stats_algorithm, libmmcamera2_q3a_core, libmmcamera2_mct, libmmcamera2_imglib_modules, libmmcamera2_iface_modules, libmmcamera_interface, libmmcamera2_isp_modules, libmmcamera2_stats_modules depends on intrinsic symbols which are difficult to shim like __aeabi_d2lz, __aeabi_ldivmod, __aeabi_ul2d, etc...
+# libmmcamera2_cpp_module, libmmcamera2_is, libmmcamera2_stats_lib, libmmcamera2_stats_algorithm, libmmcamera2_q3a_core, libmmcamera2_mct, libmmcamera2_imglib_modules, libmmcamera2_iface_modules, libmmcamera2_isp_modules, libmmcamera2_stats_modules depends on intrinsic symbols which are difficult to shim like __aeabi_d2lz, __aeabi_ldivmod, __aeabi_ul2d, etc...
 
 # ADSP
 vendor/lib/libadsp_hvx_callback_skel.so
@@ -71,24 +71,19 @@ vendor/lib/libaudioalsa.so
 
 # Camera - from 00WW_3_260
 vendor/bin/mm-qcamera-app|1914dd40954d0679c9289c9f4a5a255ff6b70cb1
-vendor/lib/hw/camera.sdm660.so|925527a7a3fa2224fe1deca7883ec199745536b2|db95d35d4870715a1c21f2e598df28efc459f8b8
 vendor/lib/libdepthmapwrapper.so|8d5f03354650ddea19fc8781c824fbb96105a86e
 vendor/lib/libfih_camera_effect.so|360a9dc97b27b95025860c8dc9508701f81ae5e3
 vendor/lib/libflash_dummy_flash.so|481bd2fccd85401d4834d96e8e4f78f74d37e31e
 vendor/lib/libflash_pmic.so|c016a2e78f0f4d11ae40ca6f383816b4fa4abf5c
-vendor/lib/libhal_dbg.so|17b9637d5cd37ff2b76446a355a69f9b6a66afaa
 vendor/lib/libimage_matting.so|a05558225578eddfebfbc32bddf75ac18f897708
 vendor/lib/libjpegdhw.so|21e70be964a1ce408e5a44a642787b818ef3792b
 vendor/lib/libjpegdmahw.so|90698ab1fee9a756f4e5f97d740a75664f7de649
 vendor/lib/libjpegehw.so|2e822162fa8e272cc1be5a4398761e28d7ee487f
 vendor/lib/libmm-qcamera.so|b1cd721ae05214ed3bf8eac4251bb87787d16d2e
 vendor/lib/libmmjpeg.so|2cad93f036b6c10d9d6057ff43a64b5adddb7433
-vendor/lib/libmmjpeg_interface.so|c464b5483b4f2b47968bf3c1b56bb874e12dcc96
-vendor/lib/libmmlib2d_interface.so|7e62ac6642962945da76b542b672e156f59b77e3
 vendor/lib/libmmqjpeg_codec.so|9effcf5e36eb93793bfbf69952cb9208cefd2f1f
 vendor/lib/libmmqjpegdma.so|8886bc324ec5ff0af83b7bf44fa04405b1ed139e
 vendor/lib/libmpbase.so|25b49173aac8551cdebd4fbfccdbcb09e0b8469d
-vendor/lib/libqomx_core.so|2f37f313f74d593b28c0231b807624419acd9fd5
 vendor/lib/libqomx_jpegdec.so|89578627bc00a41fef61b21e96d7d02b2745b978
 vendor/lib/libqomx_jpegenc.so|22cd838c1aa3c00873a70ee6ac6e8bde73a4e819
 vendor/lib/libqomx_jpegenc_pipe.so|d3fc07a7278ba20c8315ecf6de38f967d8af926d
@@ -97,14 +92,6 @@ vendor/lib/libremosaic_daemon.so|2e3e6c4a7ab42be68cc8389f4f4528efd7bd9bde
 # Camera (actuators) - from 00WW_3_260
 vendor/lib/libactuator_dw9800.so|9914519e6015d8cf9f346dd1457384f54da5a042
 vendor/lib/libactuator_pseudo.so|a6ce08fa1d1e19d975b4da08d54c3319fcd1fd57
-
-# Camera (Arcsoft) - from 00WW_3_260
-vendor/lib/libarcsoft_beautyshot.so|92c59d4a718aff526064aa9bd1c36415e0e97d8b
-vendor/lib/libarcsoft_beautyshot_image_algorithm.so|5d62f8edd027144c254384b70bc0eb7c34ac7ba3
-vendor/lib/libarcsoft_beautyshot_video_algorithm.so|9b6b7ace5f27021e4d2563fe8dc33f3ae017f7ec
-vendor/lib/libarcsoft_night_shot.so|d882aa66e8b0ec9ec62631bb5a601ef55a53a0ab
-vendor/lib/libarcsoft_picselfie_algorithm.so|0608a376de3fd4aae771ec9379654a5cfcf1f08e
-vendor/lib/libarcsoft_smart_denoise.so|486a8c52bd4a66910bcbbf5d3f2dc37256a3c250
 
 # Camera (chromatix) - from 00WW_3_260
 vendor/lib/libchromatix_s5k3p3_common.so|dc8f23e3a8607b60286b5c9f80dbaa381d920a5a
@@ -247,7 +234,6 @@ vendor/lib/libmmcamera2_sensor_modules.so|2ebf7f2611f7621887832a87cecf922ef0bbf8
 vendor/lib/libmmcamera2_stats_algorithm.so;DISABLE_CHECKELF|fd06884bd192f476727c6cf2bc4784a4a840515f
 vendor/lib/libmmcamera2_stats_lib.so;DISABLE_CHECKELF|724156e6ebe7d9c886570d18e872c1ca040ff80c
 vendor/lib/libmmcamera2_stats_modules.so;DISABLE_CHECKELF|03478c1e222bec1aa9a9d1da0bf564d906365365
-vendor/lib/libmmcamera_arcsoftbokeh_lib.so|b18ef303297921f8a7d33c4fc062c4803eb663a0
 vendor/lib/libmmcamera_csidtg.so|fdf5fa72c78bb6cc02c59db9da0584e4c68e4911
 vendor/lib/libmmcamera_dbg.so|a482ba9d61eb153777dc782e4865f67981ad910e
 vendor/lib/libmmcamera_depth_map.so|ecb230a78ae4e61899141d75acf66ae4aa35a5f2
@@ -263,7 +249,6 @@ vendor/lib/libmmcamera_hvx_add_constant.so|960bb2387a793af68f3748802f3a0583dcdea
 vendor/lib/libmmcamera_hvx_grid_sum.so|222c0747dddba59fb41bcf8d4df16bd08dc71049
 vendor/lib/libmmcamera_imglib.so|2ce9c9a1c3dbbe71f016007cb019f8afbe116b0c
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so|9560871c0c94d2535dd1a270a1c01d6e14bbe7c8
-vendor/lib/libmmcamera_interface.so;DISABLE_CHECKELF|21c94666ff6f96356af1bd2a4d30799ba2434c9c
 vendor/lib/libmmcamera_isp_abf48.so|8aae65e260d33f36ade3da5ff594e6dddfaad784
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so|dcb52d8d0f8acaeb9b7bfa7910ac40c00c6eb8f1
 vendor/lib/libmmcamera_isp_bf_stats47.so|3c9f1c7bb4de2e00c7e863f6a6a0fc96687b77dd
