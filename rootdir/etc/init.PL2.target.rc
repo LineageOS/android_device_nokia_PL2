@@ -15,11 +15,8 @@ service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.samsung
     disabled
     group nfc
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
-    interface android.hardware.nfc@1.2::INfc default
-    interface android.hardware.nfc@1.1::INfc default
-    interface android.hardware.nfc@1.0::INfc default
     class hal
     user nfc
     group nfc
